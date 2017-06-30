@@ -1,0 +1,13 @@
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .ellipsis {
+        padding-left: 2px;
+    }
+}
+
+

@@ -1,0 +1,243 @@
+/*********theme default create by xlm**********/
+
+/*主题颜色*/
+@value primary: #39acfa;
+@value second: #333;
+@value third: #e8e8e8;
+@value fourth: #808080;
+@value fifth: #5a5a5a;
+@value white: #fff;
+@value grey: #454e57;
+/*导航栏配置*/
+@value navBackground: white;
+@value navTopBorder: grey;
+@value navBottomBorder: grey;
+/*@value iconSrc: img/nav_icon.png;*/
+@value navText: second;
+@value navTextActive: primary;
+@value borderLine: third;
+@value divideLine: third;
+@value newCreateBtnBg: primary;
+@value newCreateBtnColor: white;
+@value logoWidth: 150px;
+@value logoHeight: 35px;
+/*左侧个人信息框*/
+@value personBoxBg: white;
+/*@value personBoxTopSrc: login_bg.png;*/
+@value personBoxName: second;
+@value personBoxItemName: fourth;
+@value personBoxItemNum: second;
+@value personBoxItemActive: primary;
+@value personAvaBorder: white;
+/*左侧热门话题框*/
+@value topicBoxBg: white;
+@value topicBoxTitle: second;
+@value personBoxSubtitle: fifth;
+@value topicBoxContentText: fifth;
+/*背景图片*/
+@value bgSrc: 'img/bg.png';
+@value bgColor: #e0ebdb;
+/*@value logoSrc: 'img/logo_icon.png';*/
+
+
+.nav-title-active {
+    color: navText;
+}
+
+.nav-title-active:hover, .nav-title-disabled {
+    color: navTextActive;
+}
+
+.nav-sec-active {
+    color: navText;
+}
+
+.nav-sec-active:hover {
+    color: navTextActive;
+}
+
+.per-item-name-active {
+    color: personBoxItemName;
+}
+
+.per-item-num-active {
+    color: personBoxItemNum;
+}
+
+.per-item-name-active:hover, .per-item-num-active:hover {
+    color: personBoxItemActive;
+}
+
+/*background*/
+body {
+    background: #fdfdfe;
+}
+/*dashboard*/
+.header {
+    background: navBackground;
+    border-top: 3px solid navTopBorder;
+    border-bottom: 2px solid navBottomBorder;
+}
+
+.pre_menu {
+    composes: nav-title-active;
+}
+
+.pre_menu_active {
+    font-weight: bold;
+    composes: nav-title-disabled;
+}
+
+.new_weibo_btn {
+    background: newCreateBtnBg;
+    color: newCreateBtnColor;
+}
+
+.header_user {
+    composes: nav-title-active;
+}
+
+.secmenu {
+    background: navBackground;
+    border: 1px solid borderLine;
+}
+
+.secmenu_a {
+    composes: nav-sec-active;
+    border-bottom: 1px solid divideLine;
+}
+
+/*top menulist icon*/
+.icon_nav {
+    float: left;
+    margin: 18px 5px 0 0;
+    width: 20px;
+    height: 20px;
+}
+
+.icon_nav_logo {
+    composes: icon_nav;
+    height: logoHeight;
+    width: logoWidth;
+    margin: 12px 0 0 20px;
+    /*background: url(logoSrc) no-repeat;*/
+}
+
+.icon_nav_focus {
+    composes: icon_nav;
+    background-position: -232px 0;
+}
+
+.pre_menu:hover .icon_nav_focus, .pre_menu_active .icon_nav_focus {
+    background-position: -420px 0;
+}
+
+.icon_nav_square {
+    composes: icon_nav;
+    background-position: -259px 0;
+}
+
+.pre_menu:hover .icon_nav_square, .pre_menu_active .icon_nav_square {
+    background-position: -394px 0;
+}
+
+.icon_nav_info {
+    composes: icon_nav;
+    background-position: -97px 0;
+}
+
+.pre_menu:hover .icon_nav_info, .pre_menu_active .icon_nav_info {
+    background-position: -313px 0;
+}
+
+.icon_nav_rank {
+    composes: icon_nav;
+    background-position: -124px 0;
+}
+
+.pre_menu:hover .icon_nav_rank, .pre_menu_active .icon_nav_rank {
+    background-position: -340px 0;
+}
+
+.icon_nav_search {
+    composes: icon_nav;
+    background-position: -205px 0;
+}
+
+.pre_menu:hover .icon_nav_search, .pre_menu_active .icon_nav_search {
+    background-position: -447px 0;
+}
+
+.icon_nav_refresh {
+    composes: icon_nav;
+    margin: 16px 3px 0 0;
+    background-position: -286px 0;
+}
+
+.icon_nav_setting {
+    composes: icon_nav;
+    background-position: -151px 0;
+}
+
+.header_user:hover .icon_nav_setting {
+    background-position: -367px 0;
+}
+
+.icon_nav_newcreate {
+    composes: icon_nav;
+    background-position: -178px 0;
+    margin-left: 32px;
+}
+/*left personbox*/
+.personbox {
+    background: personBoxBg;
+}
+
+/*.personbox_top {*/
+    /*background: url(personBoxTopSrc) no-repeat;*/
+/*}*/
+
+.personbox_name {
+    color: personBoxName;
+}
+
+.personbox_avatar {
+    background: personBoxBg;
+    border: 4px solid personAvaBorder;
+}
+
+.personbox_li {
+    border-right: 1px solid divideLine;
+}
+
+.personbox_li:hover .itemnum, .personbox_li:hover .itemname {
+    color: personBoxItemActive;
+}
+
+.itemnum {
+    composes: per-item-num-active;
+}
+
+.itemname {
+    composes: per-item-name-active;
+}
+/*left topic*/
+.topic {
+    background: topicBoxBg;
+}
+
+.topic_title_box {
+    border-bottom: 1px solid divideLine;
+}
+
+.topic_title {
+    color: topicBoxTitle;
+}
+
+.hot_topic_a {
+    composes: per-item-name-active;
+}
+
+.refresh {
+    composes: per-item-name-active;
+}

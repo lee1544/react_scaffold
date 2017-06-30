@@ -1,0 +1,19 @@
+{
+  "extends": "rackt",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "jsx-quotes": [ 2, "prefer-single" ],
+    "react/display-name": 2,
+    "react/jsx-boolean-value": 1,
+    "react/prop-types": 2,
+    "no-extra-semi": 2, // 不允许多余的分号
+    "semi": [2, "never"], // 可以不使用分号的地方都不使用分号
+    "no-spaced-func": 2, // 调用函数（非声明函数）时括号与函数名之间不允许空格
+    "no-unreachable" : 2, // 不允许访问不到的语句
+    "no-unused-vars" : 0, // 未使用的变量，忽略
+    "no-console": 0, // 暂不启用
+    "indent": [2,4, {"SwitchCase":1, "VariableDeclarator": {"var":1, "let": 1, "const": 1}}]
+  }
+}

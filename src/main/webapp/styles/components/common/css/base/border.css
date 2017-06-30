@@ -1,0 +1,43 @@
+@value divide: 1px solid #e8e8e8;
+
+/*border-radius*/
+.radius-50pc {
+    border-radius: 50%;
+}
+
+.radius-25px {
+    border-radius: 25px;
+}
+
+.radius-3px {
+    border-radius: 3px;
+}
+
+.radius-5px {
+    border-radius: 5px;
+}
+
+.radius-8px {
+    border-radius: 8px;
+}
+
+/*divide line*/
+.divider-primary {
+    border: divide;
+}
+
+.divider-primary-r {
+    border-right: divide;
+}
+
+.divider-primary-b {
+    border-bottom: divide;
+}
+
+.divider-primary-l {
+    border-left: divide;
+}
+
+.divider-primary-t {
+    border-top: divide;
+}

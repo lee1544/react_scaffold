@@ -1,0 +1,17 @@
+body {
+    text-align: left!important;
+}
+.main {
+    width:-webkit-calc(100vw - 260px);
+}
+.formContent {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.button {
+    margin: 40px 30px 0 80px;
+}
+.decollator {
+    margin-left: 20px;
+    margin-right: 20px;
+}

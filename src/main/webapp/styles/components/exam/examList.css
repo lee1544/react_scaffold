@@ -1,0 +1,65 @@
+.main {
+    width:-webkit-calc(100vw - 260px);
+}
+.tableDiv {
+    max-height:-webkit-calc(100vh - 340px);
+    overflow-y: auto;
+    clear: both;
+    margin-left: 20px;
+}
+.tableDiv th, .tableDiv td {
+    text-align: center !important;
+}
+.queryDiv {
+    float: right;
+    margin: 20px 30px 20px 0;
+}
+
+.roleTableDiv {
+    width: 300px;
+    max-height:-webkit-calc(100vh - 340px);
+    overflow-y: auto;
+    clear: both;
+    margin-left: 20px;
+}
+
+.roleTableDiv th, .roleTableDiv td {
+    text-align: center !important;
+}
+
+.addDiv {
+    margin: 20px 0 20px 20px;
+}
+
+.tabsDiv {
+    margin: 20px;
+}
+
+.paperTableDiv {
+    max-height:-webkit-calc(100vh - 380px);
+    overflow-y: auto;
+    clear: both;
+}
+.paperTableDiv th, .paperTableDiv td {
+    text-align: center !important;
+}
+
+.pagination {
+    margin-top: 20px;
+    margin-right: 40px;
+    float: right;
+}
+
+.prev {
+    position: fixed;
+    margin-left: -12px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.next {
+    position: fixed;
+    right: 20px;
+    margin-top: 14px;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+@value bluePrimary: #39acfa;
+@value textPrimary: #333;
+@value textSecond: #6f6f6f;
+@value textThird: #808080;
+@value greyLighter: #eee;
+
+
+.white {
+    color: #fff;
+}
+
+.grey-primary-disabled, .grey-primary-active {
+    color: textPrimary;
+}
+
+.grey-second-disabled, .grey-second-active {
+    color: textSecond;
+}
+
+.grey-third-disabled, .grey-third-active {
+    color: textThird;
+}
+
+.grey-primary-active:hover, .grey-second-active:hover, .grey-third-active:hover, .blue-primary-disabled {
+    color: bluePrimary;
+}
+
+

@@ -1,0 +1,118 @@
+/**
+* GLOBAL
+*/
+html {
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei";
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, p, div, ol, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+    color:#333;
+    overflow-x: hidden;
+}
+
+body, input, button, select, textarea {
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+body *::-webkit-scrollbar {
+    width: 6px;
+    display: block;
+    background-color: transparent;
+}
+body *::-webkit-scrollbar-thumb {
+    background-color: #d7e5ea;
+}
+body *::-webkit-scrollbar, body *::-webkit-scrollbar-thumb {
+    overflow: visible;
+    border: solid 1px transparent;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+body *::-webkit-scrollbar-button {
+    height: 0;
+    display: block;
+    background-color: transparent;
+}
+
+button, textarea, img {
+    border:none;
+    background: transparent;
+    outline: none;
+}
+
+ol, ul {
+    list-style: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+input {
+    background-color: #fff;
+    border: 1px solid #BEBFBF;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus{
+    border-color:#0c5aa9;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #666;
+    font-weight: normal;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #666;
+    font-weight: normal;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #666;
+    font-weight: normal;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #666;
+    font-weight: normal;
+}
+/*清除浮动*/
+.clearfix:after{
+    content: ' ';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+::-ms-clear,::-ms-reveal{
+    display:none;
+}
+
+.inputbox{ position: relative; display: inline-block;}
+
+.hide{ display: none !important;}
+/*遮罩层*/
+.mask{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+

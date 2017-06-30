@@ -1,0 +1,8 @@
+/methodology_exam_server.iml
+/.idea
+/logs
+/target
+/classes
+node_modules
+npm-debug.log
+*.iml

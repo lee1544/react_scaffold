@@ -1,0 +1,33 @@
+.white {
+    background: #fff;
+}
+
+.blue-primary {
+    background: #39acfa;
+}
+
+.blue-primary:hover {
+    background: #36a5f0;
+}
+
+.blue-second {
+    background: #c0dfef;
+}
+
+.grey-primary-disabled {
+    background: #333;
+}
+
+.grey-primary-active {
+    background: #333;
+}
+
+.grey-primary-active:hover {
+    background: #39acfa;
+}
+
+.red-primary {
+    background: #df3e3e;
+}
+
+

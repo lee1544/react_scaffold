@@ -1,0 +1,4 @@
+.box_shadow_a {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1), -2px -2px 5px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.1), -2px -2px 5px rgba(0,0,0,0.1);
+}

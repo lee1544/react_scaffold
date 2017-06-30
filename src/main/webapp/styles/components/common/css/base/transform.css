@@ -1,0 +1,6 @@
+.slide_down {
+    transform: scale(1,0);
+    -webkit-transform: scale(1,0);
+    transform-origin: top center;
+    -webkit-transform-origin: top center;
+}

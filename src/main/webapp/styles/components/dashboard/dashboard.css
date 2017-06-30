@@ -1,0 +1,50 @@
+@value font: "css/base/font.css";
+
+.icon_nav_logo {
+    height: 90px;
+    line-height: 90px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    text-decoration: none;
+}
+
+.btn_exit {
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin-right: 30px;
+    margin-top: 35px;
+    cursor: pointer;
+    background:  url("../../../img/logout.png") no-repeat;
+    background-size:24px 24px;
+}
+
+.avatar_box {
+    float: right;
+    margin: 16px 20px 0 0;
+    vertical-align: middle;
+}
+
+.avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 26px;
+    margin-right: 10px;
+    border: 2px solid #aaa;
+}
+
+.avatar, .name {
+    display: inline-block;
+    vertical-align: middle;
+}
+.name {
+    color: #fff;
+    font-size: 14px;
+    composes: ellipsis from font;
+}
+
+
+
+

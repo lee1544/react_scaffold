@@ -1,0 +1,87 @@
+/*close btn*/
+.closeBtn {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url('img/ic_clear.png') 0 0 no-repeat;
+    right: 16px;
+    top: 22px;
+    color: #333;
+    padding: 5px 5px;
+    z-index: 1;
+    font-size: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 10px;
+}
+
+.backTopBtn:hover {
+    background-position: -122px -6px;
+}
+/*button*/
+@define-mixin commonBtn $width, $height, $background, $color:white, $size, $radius {
+    width: $width;
+    height: $height;
+    line-height: $height;
+    background: $background;
+    color: $color;
+    font-size: $size;
+    text-align: center;
+    border-radius: $radius;
+    cursor: pointer;
+    overflow: hidden;
+}
+.primaryBtn {
+    @mixin commonBtn 75px, 30px, #39acfa, white, 14px, 3px;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.primaryBtn:hover {
+    background: #2e8ac8;
+}
+
+.primaryBtn:disabled {
+    background: rgba(229,229,229,1);
+    color: rgba(0,0,0,0.3);
+}
+
+.primaryBtn:disabled:hover {
+    background: rgba(229,229,229,1);
+    color: rgba(0,0,0,0.3);
+    cursor: default;
+}
+
+.followBtn {
+    @mixin commonBtn 80px, auto, #3DD020, white, 14px, 25px;
+    padding: 10px 12px 12px 10px;
+    box-shadow: 0 0 3px #ddd;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+
+.followBtn:hover {
+    background: #e76812;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.2), -3px -3px 8px rgba(0,0,0,0.2);
+}
+
+.confrimBtn {
+@mixin commonBtn 50px, auto, #fff, #39acfa, 14px, 3px;
+    padding: 2px 0;
+    box-shadow: 0 0 3px #ddd;
+    border: 1px solid #39acfa;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.confrimBtn:hover {
+    background: #39acfa;
+    color: #fff;
+}
+.cancelBtn {
+@mixin commonBtn 50px, auto, #fff, #ccc, 14px, 3px;
+    padding: 2px 0;
+    box-shadow: 0 0 3px #ddd;
+    border: 1px solid #ccc;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+}
+.cancelBtn:hover {
+    background: #ccc;
+    color: #fff;
+}
